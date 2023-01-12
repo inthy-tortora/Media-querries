@@ -1,0 +1,164 @@
+
+* {
+  margin: 0%;
+}
+
+.titre-accueille {
+  display: flex;
+  background-image: url(../img/img-accueille/marseille-velodrome.jpeg);
+  background-repeat: no-repeat;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color: whitesmoke;
+}
+
+/* FIN slider image */
+/*------------------*/
+
+
+
+.img-slider {
+  width: 500px;
+  overflow: hidden;
+}
+
+.img-slides {
+  width: calc(500px * 3);
+  animation: glisse 10s infinite;
+}
+
+.img-slide {
+  width: 500px;
+  height: 300px;
+  float: left;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0px);
+  }
+
+  33.33% {
+    transform: translateX(-500px);
+  }
+
+  66.66% {
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* FIN slider image */
+/*------------------*/
+
+.article-disposition {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2f7398;
+}
+
+article {
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  margin-bottom: 3%;
+  background: white ;
+}
+
+.section-contenu {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: 17px;
+  margin-top: 2%;
+  font-family: Arial,serif;
+  justify-content: space-around;
+  height: 300px;
+}
+
+p {
+  width: 50%;
+}
+
+.accueille-section {
+  width: 80%;
+  border: solid black;
+  border-radius: 50px;
+}
+
+.news-section{
+  width: 79%;
+  border: solid black;
+  border-radius: 50px;
+}
+
+.news-disposition1{
+  padding-top: 5%;
+  padding-left: 0.2%;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  background: lightblue;
+}
+.News-Marseille{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5em;
+  color: whitesmoke;
+}
+
+.ita{
+  font-style: italic;
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+  .titre-accueille {
+    font-size: 3em;
+  }
+  .section-contenu {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .img-slider {
+    width: 200px;
+    overflow: hidden;
+    padding-bottom: 5%;;
+  }
+  .accueille-section{
+    width: 80%;
+  }
+
+  .img-slide {
+    width: 200px;
+    height: 200px;
+    float: left;
+  }
+}
+  .News-Marseille{
+    font-size: 25px;
+    padding-bottom: 5px;
+  }
+@keyframes glisse {
+  0% {
+    transform: translateX(0px);
+  }
+
+  33.33% {
+    transform: translateX(-200px);
+  }
+
+  66.66% {
+    transform: translateX(-400px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
